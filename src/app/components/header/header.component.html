@@ -1,3 +1,34 @@
-<p>
-  header works!
-</p>
+<mat-sidenav-container fullscreen>
+
+    <!-- <mat-sidenav #sidenav>
+      <mat-nav-list>
+          <mat-toolbar-row routerLink="/dashboard">
+          Dashboard
+          </mat-toolbar-row>
+        <mat-toolbar-row routerLink="/charts">
+          Charts
+        </mat-toolbar-row>
+        <mat-toolbar-row routerLink="/feedback">
+          Feedback
+        </mat-toolbar-row>
+        <mat-toolbar-row routerLink="/about">
+          About Us
+        </mat-toolbar-row>
+      </mat-nav-list>
+    </mat-sidenav> -->
+
+    <mat-toolbar color="primary">
+      <!-- <div style="text-align: center;"> -->
+      <!-- <button mat-button (click)="sidenav.toggle()"> -->
+        <!-- <mat-icon>menu</mat-icon> -->
+      <!-- </button> -->
+      <!-- </div> -->
+      <button mat-button routerLink="/"><span>csacsa</span></button>
+      <span class="fill-remaining-space"></span>
+      <button mat-button routerLink="/login"><span>cascas</span></button>
+      <button mat-button routerLink="/login"><span>cascascsacas</span></button>
+    </mat-toolbar>
+  <div class="body-margin">
+    <router-outlet></router-outlet>
+  </div>
+</mat-sidenav-container>
