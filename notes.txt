@@ -1,3 +1,16 @@
 npm install @angular-devkit/build-angular@0.13.0
 ng add @angular/matrial
 npm audit fix
+
+
+
+
+ npm install
+   83  ng update @angular/cli
+   84  git add .
+   85  git commit -am "tes"
+   86  ng update @angular/cli
+   87  ng update @angular-devkit/build-angular
+   88  ng serve
+   89  ng serve
+   90  history
