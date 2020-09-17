@@ -11,12 +11,9 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
   
-open(menu){
-  menu.openMenu();
-  }
   ngOnInit() {
   }
 
+
+
 }
-
-

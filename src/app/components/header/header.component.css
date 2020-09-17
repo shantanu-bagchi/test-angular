@@ -14,5 +14,5 @@ main {
   .fill-remaining-space {
     /* This fills the remaining space, by using flexbox. 
        Every toolbar row uses a flexbox row layout. */
-    flex: 2 2 auto;
+    flex: 1 1 auto;
   }

@@ -1,58 +1,142 @@
 <mat-sidenav-container fullscreen>
 
-    <!-- <mat-sidenav #sidenav>
-      <mat-nav-list>
-          <mat-toolbar-row routerLink="/dashboard">
-          Dashboard
-          </mat-toolbar-row>
-        <mat-toolbar-row routerLink="/charts">
-          Charts
-        </mat-toolbar-row>
-        <mat-toolbar-row routerLink="/feedback">
-          Feedback
-        </mat-toolbar-row>
-        <mat-toolbar-row routerLink="/about">
-          About Us
-        </mat-toolbar-row>
-      </mat-nav-list>
-    </mat-sidenav> -->
-
-    <mat-toolbar color="primary">
-      <!-- <div style="text-align: center;"> -->
-      <!-- <button mat-button (click)="sidenav.toggle()"> -->
-        <!-- <mat-icon>menu</mat-icon> -->
-      <!-- </button> -->
-      <!-- </div> -->
-      <span class="fill-remaining-space">
-      <button mat-button #r="matMenuTrigger" mat-button [matMenuTriggerFor]="menu" >
-        <mat-icon (mouseover)="open(r)"  >menu</mat-icon>
-      </button>
-      <mat-menu #menu="matMenu" [overlapTrigger]="false">
+  <mat-toolbar color="primary">
+    <span class="fill-remaining-space">
+      
+      <button mat-button [matMenuTriggerFor]="menu" #menuTrigger="matMenuTrigger" 
+        (mouseover)="menuTrigger.openMenu()"  yPosition="below">item 1
+      
+        </button>
+        <mat-menu #menu="matMenu" [overlapTrigger]="false">
+        <span (mouseleave)="menuTrigger.closeMenu()">
         <button mat-menu-item>
           <mat-icon>home</mat-icon>
-          <span>Home</span>
+          <span>Home1</span>
         </button>
         <button mat-menu-item>
           <mat-icon>people_outline</mat-icon>
-          <span>Connecting</span>
+          <span>Connecting1</span>
         </button>
         <button mat-menu-item>
           <mat-icon>videocam</mat-icon>
-          <span>Let's talk</span>
+          <span>Let's talk1</span>
         </button>
         <button mat-menu-item>
           <mat-icon>exit_to_app</mat-icon>
-          <span>Logout</span>
+          <span>Logout1</span>
         </button>
+      </span>
       </mat-menu>
-      <button mat-button routerLink="/"><span>item 1</span></button>
-      <button mat-button routerLink="/"><span>item 2</span></button>
-      <span class="fill-remaining-space"></span>
-      <button mat-button routerLink="/login"><span>item 3</span></button>
-      <button mat-button routerLink="/login"><span>item 4</span></button>
+
+      
+      <button mat-button [matMenuTriggerFor]="menu2" #menu2Trigger="matMenuTrigger" 
+        (mouseover)="menu2Trigger.openMenu()"  xPosition="before">item 2
+      
+        </button>
+        <mat-menu #menu2="matMenu" [overlapTrigger]="false">
+        <span (mouseleave)="menu2Trigger.closeMenu()">
+        <button mat-menu-item>
+          <mat-icon>home</mat-icon>
+          <span>Home2</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>people_outline</mat-icon>
+          <span>Connecting2</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>videocam</mat-icon>
+          <span>Let's talk2</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>exit_to_app</mat-icon>
+          <span>Logout2</span>
+        </button>
+      </span>
+      </mat-menu>
+
+
+      <button mat-button [matMenuTriggerFor]="menu3" #menu3Trigger="matMenuTrigger" 
+      (mouseover)="menu3Trigger.openMenu()"  yPosition="below">item 3
+    
+      </button>
+      <mat-menu #menu3="matMenu" [overlapTrigger]="false">
+      <span (mouseleave)="menu3Trigger.closeMenu()">
+      <button mat-menu-item>
+        <mat-icon>home</mat-icon>
+        <span>Home3</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>people_outline</mat-icon>
+        <span>Connecting3</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>videocam</mat-icon>
+        <span>Let's talk3</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Logout3</span>
+      </button>
+    </span>
+    </mat-menu>
+
+
+    <button mat-button [matMenuTriggerFor]="menu4" #menu4Trigger="matMenuTrigger" 
+    (mouseover)="menu4Trigger.openMenu()"  yPosition="below">item 4
+  
+    </button>
+    <mat-menu #menu4="matMenu" [overlapTrigger]="false">
+    <span (mouseleave)="menu3Trigger.closeMenu()">
+    <button mat-menu-item>
+      <mat-icon>home</mat-icon>
+      <span>Home3</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>people_outline</mat-icon>
+      <span>Connecting3</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>videocam</mat-icon>
+      <span>Let's talk3</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>exit_to_app</mat-icon>
+      <span>Logout3</span>
+    </button>
+  </span>
+  </mat-menu>
+
+
+
+  <button mat-button [matMenuTriggerFor]="menu4" #menu4Trigger="matMenuTrigger" 
+  (mouseover)="menu4Trigger.openMenu()"  yPosition="below">item 4
+
+  </button>
+  <mat-menu #menu4="matMenu" [overlapTrigger]="false">
+  <span (mouseleave)="menu4Trigger.closeMenu()">
+  <button mat-menu-item>
+    <mat-icon>home</mat-icon>
+    <span>Home3</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>people_outline</mat-icon>
+    <span>Connecting3</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>videocam</mat-icon>
+    <span>Let's talk3</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>exit_to_app</mat-icon>
+    <span>Logout3</span>
+  </button>
+</span>
+</mat-menu>
+
+      
     </span>
     <span class="fill-remaining-space">Application Title</span>
-    </mat-toolbar>
+  </mat-toolbar>
   <div class="body-margin">
     <router-outlet></router-outlet>
   </div>
