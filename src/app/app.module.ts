@@ -8,7 +8,6 @@ import { ContentComponent } from './components/content/content.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutUsComponent } from './components/about-us/about-us.component';
-import { EducationComponent } from './components/education/education.component';
 
 @NgModule({
   declarations: [
@@ -16,8 +15,7 @@ import { EducationComponent } from './components/education/education.component';
     HeaderComponent,
     ContentComponent,
     FooterComponent,
-    AboutUsComponent,
-    EducationComponent
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
