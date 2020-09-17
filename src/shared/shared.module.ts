@@ -11,7 +11,10 @@ import {
   MatListModule,
   MatPaginatorModule,
   MatCardModule,
-  MatSelectModule, MatCheckboxModule
+  MatSelectModule, 
+  MatCheckboxModule,
+  MatMenuModule,
+  
 
 
 } from '@angular/material';
@@ -31,7 +34,8 @@ import {
     MatPaginatorModule,
     MatCardModule,
     MatCheckboxModule,
-    MatRadioModule
+    MatRadioModule,
+    MatMenuModule
   ],
   exports: [
     MatInputModule,
@@ -47,7 +51,8 @@ import {
     MatCardModule,
     MatSelectModule,
     MatCheckboxModule,
-    MatRadioModule
+    MatRadioModule,
+    MatMenuModule
   ]
 
 })
