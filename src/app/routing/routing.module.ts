@@ -7,10 +7,10 @@ import { RoutingRoutingModule } from './routing-routing.module';
 
 const routes: Routes = [
   { path: 'home', component: ContentComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' }
-  { path: '', redirectTo: '/home', pathMatch: 'full' }
-  { path: '', redirectTo: '/home', pathMatch: 'full' }
-  { path: '', redirectTo: '/home', pathMatch: 'full' }
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 @NgModule({
