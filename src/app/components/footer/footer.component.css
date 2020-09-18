@@ -1,0 +1,9 @@
+.mat-toolbar.mat-primary {
+    background: #000000;
+    color: #fff;
+  }
+  .footer-element {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
