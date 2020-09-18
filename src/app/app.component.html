@@ -1,8 +1,13 @@
-<app-header></app-header>
-<div class="container">
-  <app-content></app-content>
+<div fxFlexFill fxLayout="column" style="padding: 5px">
+  <div fxFlex="none">
+    <app-header></app-header>
+  </div>
+  
+    <div fxFlex>
+      <app-content></app-content>
+    </div>
+
+  <div fxFlex="none">
+    <app-footer></app-footer>
+  </div>
 </div>
-<div class="container">
-  <app-about-us></app-about-us>
-</div>
-<app-footer></app-footer>
