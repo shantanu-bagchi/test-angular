@@ -12,9 +12,6 @@ export class HeaderComponent implements OnInit {
   recheckIfInMenu: boolean;
   constructor() { }
   
-open(menu){
-  menu.openMenu();
-  }
   ngOnInit() {
   }
   openResourceMenu() {
@@ -29,6 +26,6 @@ open(menu){
     }, 175);
   }
 
+
+
 }
-
-
