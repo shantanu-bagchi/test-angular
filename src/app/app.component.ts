@@ -11,9 +11,6 @@ export class AppComponent {
   constructor(private router: Router){
     
   }
-  onClick(){
-    this.router.navigate(['/Introduction']);
-
-  }
+ 
   title = 'shantanu-test';
 }
