@@ -1,8 +1,8 @@
 <mat-toolbar color="primary">
   <button mat-button routerLink="/content">
-    <span class="fill-remaining-space"><img width="100" height="100" src="assets/kahlar.png"></span>
+    <span><img width="100" src="assets/kahlar.png"></span>
   </button>
-  <span class="fill-remaining-space">
+  <span>
     <button mat-button [matMenuTriggerFor]="aboutusmenu" #aboutusmenuTrigger="matMenuTrigger"
       (mouseover)="aboutusmenuTrigger.openMenu()" yPosition="below" class="dropdown">About US
     </button>
@@ -10,7 +10,7 @@
       <span (mouseleave)="aboutusmenuTrigger.closeMenu()">
         <button mat-menu-item class="dopdown-content">
           <mat-icon>home</mat-icon>
-          <span routerLink="/education">Introduction</span>
+          <span routerLink="/aboutus">Introduction</span>
         </button>
         <button mat-menu-item>
           <mat-icon>people_outline</mat-icon>
