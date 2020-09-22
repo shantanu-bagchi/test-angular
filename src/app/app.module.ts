@@ -5,7 +5,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule} from '@angular/flex-layout';
 import { AppRoutingModule, routingComponents } from '../app/app-routing.module';
 import { AppComponent } from './app.component';
-
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { ContentComponent } from '../app/components/content/content.component';
 import { AboutUsComponent } from '../app/components/about-us/about-us.component'
 import { BoardComponent } from '../app/components/board/board.component';
@@ -30,7 +31,7 @@ import { OnlinePaymentComponent } from '../app/components/online-payment/online-
 import { ContactUsComponent } from '../app/components/contact-us/contact-us.component';
 
 @NgModule({
-  declarations: [AppComponent, ContentComponent, EducationComponent, AboutUsComponent, BoardComponent, FacultyComponent, GuestFacultyComponent, GuestPerformersComponent, StudentsComponent, MembershipComponent, InPersonClassesComponent, OnlineClassesComponent, WorkshopComponent, PastPerformancesComponent, UpcomingPerformancesComponent, FundraisersComponent, PhotosComponent, VideosComponent, SupportUsComponent, ProposalsComponent, StoreComponent, OnlinePaymentComponent, ContactUsComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, routingComponents, ContentComponent, EducationComponent, AboutUsComponent, BoardComponent, FacultyComponent, GuestFacultyComponent, GuestPerformersComponent, StudentsComponent, MembershipComponent, InPersonClassesComponent, OnlineClassesComponent, WorkshopComponent, PastPerformancesComponent, UpcomingPerformancesComponent, FundraisersComponent, PhotosComponent, VideosComponent, SupportUsComponent, ProposalsComponent, StoreComponent, OnlinePaymentComponent, ContactUsComponent],
   imports: [
     AppRoutingModule,
     BrowserModule,
