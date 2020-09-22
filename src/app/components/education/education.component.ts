@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import items from '../../../assets/curriculum.json';
+ 
 
 @Component({
   selector: 'app-education',
@@ -7,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EducationComponent implements OnInit {
 
+  public itemList:{item:string}[] = items;
   constructor() { }
 
   ngOnInit(): void {

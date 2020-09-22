@@ -1,2 +1,27 @@
-<p>Testing education!</p>
 
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Curriculum</mat-card-title>
+     </mat-card-header>
+    <mat-card-content>
+        <p>
+            Kahlar offers a versatile curriculum, though the main focus is on Rabindrasangeet.
+
+            The course curriculum is designed by Dr. Soumyendu Guha, Dr. Debashish Raychaudhuri and Rohini Raychaudhuri
+            based on the music knowledge and competency levels of the students. The curriculum is subject to change
+            based on evolving needs.
+        </p>
+    </mat-card-content>
+    <mat-list role="list">
+        The curriculum has embraced:
+        <mat-list-item role="listitem" *ngFor="let item of itemList">
+            <mat-icon mat-list-icon>chevron_right</mat-icon>{{item.content}}
+        </mat-list-item>
+    </mat-list>
+    <mat-card-footer>
+        <p>
+            If you are interested to know more, please feel free to <a href="#">Contact Us</a>
+        </p>
+    </mat-card-footer>
+
+</mat-card>
