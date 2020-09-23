@@ -1,124 +1,153 @@
-<mat-toolbar color="primary">
-  <button mat-button routerLink="/content">
-    <span><img width="100" src="assets/kahlar.png"></span>
-  </button>
-  <span>
-    <button mat-button [matMenuTriggerFor]="aboutusmenu" #aboutusmenuTrigger="matMenuTrigger"
-      (mouseover)="aboutusmenuTrigger.openMenu()" yPosition="below" class="dropdown">About US
-    </button>
-    <mat-menu #aboutusmenu="matMenu" [overlapTrigger]="false">
-      <span (mouseleave)="aboutusmenuTrigger.closeMenu()">
-        <button mat-menu-item class="dopdown-content">
-          <mat-icon>home</mat-icon>
-          <span routerLink="/aboutus">Introduction</span>
+<div class="header" #header>
+  <mat-toolbar color="primary">
+    <div fxLayoutGap="105px">
+      <div class="dropdown">
+        <button mat-button routerLink="/content" class="dropbtn"> <img class="logo" src="assets/kahlar.png">
         </button>
-        <button mat-menu-item>
-          <mat-icon>people_outline</mat-icon>
-          <span routerLink="/board">Board</span>
-        </button>
-        <button mat-menu-item>
-          <mat-icon>videocam</mat-icon>
-          <span routerLink="/faculty">Faculty</span>
-        </button>
-        <button mat-menu-item>
-          <mat-icon>exit_to_app</mat-icon>
-          <span routerLink="/guestFaculty">Guest Faculty</span>
-        </button>
-        <button mat-menu-item>
-          <mat-icon>people_outline</mat-icon>
-          <span routerLink="/guestPerformers">Guest Performers</span>
-        </button>
-        <button mat-menu-item>
-          <mat-icon>videocam</mat-icon>
-          <span routerLink="/students">Students</span>
-        </button>
-        <button mat-menu-item>
-          <mat-icon>exit_to_app</mat-icon>
-          <span [routerLink]="['/proposals','membership']">Membership</span>
-        </button>
-      </span>
-    </mat-menu>
-    <button mat-button [matMenuTriggerFor]="educationmenu" #educationmenuTrigger="matMenuTrigger"
-      (mouseover)="educationmenuTrigger.openMenu()" yPosition="below">Education
+      </div>
 
-    </button>
-    <mat-menu #educationmenu="matMenu" [overlapTrigger]="false">
-      <span (mouseleave)="educationmenuTrigger.closeMenu()">
-        <button mat-menu-item>
-          <mat-icon>home</mat-icon>
-          <span [routerLink]="['/proposals','curriculum']">Curriculum</span>
-        </button>
-        <button mat-menu-item>
-          <mat-icon>people_outline</mat-icon>
-          <span [routerLink]="['/proposals','inpersonclasses']">In-person Classes</span>
-        </button>
-        <button mat-menu-item>
-          <mat-icon>videocam</mat-icon>
-          <span [routerLink]="['/proposals','onlineclasses']">Online Classes</span>
-        </button>
-        <button mat-menu-item>
-          <mat-icon>exit_to_app</mat-icon>
-          <span routerLink="/workshop">Workshop</span>
-        </button>
-      </span>
-    </mat-menu>
-    <button mat-button [matMenuTriggerFor]="performancemenu" #performancemenuTrigger="matMenuTrigger"
-      (mouseover)="performancemenuTrigger.openMenu()" yPosition="below">Events
-    </button>
-    <mat-menu #performancemenu="matMenu" [overlapTrigger]="false">
-      <span (mouseleave)="performancemenuTrigger.closeMenu()">
-        <button mat-menu-item>
-          <mat-icon>home</mat-icon>
-          <span routerLink="/pastPerformances">Past Performances</span>
-        </button>
-        <button mat-menu-item>
-          <mat-icon>people_outline</mat-icon>
-          <span routerLink="/upcomingPerformances">Upcoming Performances</span>
-        </button>
-        <button mat-menu-item>
-          <mat-icon>videocam</mat-icon>
-          <span routerLink="/fundRaisers">Fundraisers</span>
-        </button>
-      </span>
-    </mat-menu>
-    <button mat-button [matMenuTriggerFor]="gallerymenu" #gallerymenuTrigger="matMenuTrigger"
-      (mouseover)="gallerymenuTrigger.openMenu()" yPosition="below">Gallery
+      <div class="dropdown" [matMenuTriggerFor]="aboutusmenu" #aboutusmenuTrigger="matMenuTrigger"
+        (mouseenter)="aboutusmenuTrigger.openMenu()" yPosition="below">
 
-    </button>
-    <mat-menu #gallerymenu="matMenu" [overlapTrigger]="false">
-      <span (mouseleave)="gallerymenuTrigger.closeMenu()">
-        <button mat-menu-item>
-          <mat-icon>home</mat-icon>
-          <span routerLink="/photos">Photos</span>
+        <button mat-button class="dropbtn">About US
         </button>
-        <button mat-menu-item>
-          <mat-icon>people_outline</mat-icon>
-          <span routerLink="/videos">Videos</span>
+        <div class="dropdown-content">
+          <mat-menu #aboutusmenu="matMenu" [overlapTrigger]="false">
+            <div class="mouseleave" (mouseleave)="aboutusmenuTrigger.closeMenu()">
+              <a mat-menu-item routerLink="/aboutus">
+                <mat-icon>home</mat-icon>
+                <span>Introduction</span>
+              </a>
+              <a mat-menu-item routerLink="/board">
+                <mat-icon>people_outline</mat-icon>
+                <span>Board</span>
+              </a>
+              <a mat-menu-item routerLink="/faculty">
+                <mat-icon>videocam</mat-icon>
+                <span>Faculty</span>
+              </a>
+              <a mat-menu-item routerLink="/guestFaculty">
+                <mat-icon>exit_to_app</mat-icon>
+                <span>Guest Faculty</span>
+              </a>
+              <a mat-menu-item routerLink="/guestPerformers">
+                <mat-icon>people_outline</mat-icon>
+                <span>Guest Performers</span>
+              </a>
+              <a mat-menu-item routerLink="/students">
+                <mat-icon>videocam</mat-icon>
+                <span>Students</span>
+              </a>
+              <a mat-menu-item [routerLink]="['/proposals','membership']">
+                <mat-icon>exit_to_app</mat-icon>
+                <span>Membership</span>
+              </a>
+            </div>
+          </mat-menu>
+        </div>
+      </div>
+      <div class="dropdown" [matMenuTriggerFor]="educationmenu" #educationmenuTrigger="matMenuTrigger"
+        (mouseenter)="educationmenuTrigger.openMenu()" yPosition="below">
+        <button mat-button class="dropbtn">Education
         </button>
-      </span>
-    </mat-menu>
-    <button mat-button [matMenuTriggerFor]="othermenu" #othermenuTrigger="matMenuTrigger"
-      (mouseover)="othermenuTrigger.openMenu()" yPosition="below">Other
-    </button>
-    <mat-menu #othermenu="matMenu" [overlapTrigger]="false">
-      <span (mouseleave)="othermenuTrigger.closeMenu()">
-        <button mat-menu-item>
-          <mat-icon>home</mat-icon>
-          <span [routerLink]="['/proposals','supportus']">Support US</span>
+        <div class="dropdown-content">
+          <mat-menu #educationmenu="matMenu" [overlapTrigger]="false">
+            <div (mouseleave)="educationmenuTrigger.closeMenu()">
+              <a mat-menu-item [routerLink]="['/proposals','curriculum']">
+                <mat-icon>home</mat-icon>
+                <span>Curriculum</span>
+              </a>
+              <a mat-menu-item [routerLink]="['/proposals','inpersonclasses']">
+                <mat-icon>people_outline</mat-icon>
+                <span>In-person Classes</span>
+              </a>
+              <a mat-menu-item [routerLink]="['/proposals','onlineclasses']">
+                <mat-icon>videocam</mat-icon>
+                <span>Online Classes</span>
+              </a>
+              <a mat-menu-item routerLink="/workshop">
+                <mat-icon>exit_to_app</mat-icon>
+                <span>Workshop</span>
+              </a>
+            </div>
+          </mat-menu>
+        </div>
+      </div>
+      <div class="dropdown" [matMenuTriggerFor]="performancemenu" #performancemenuTrigger="matMenuTrigger"
+        (mouseenter)="performancemenuTrigger.openMenu()" yPosition="below">
+        <button mat-button class="dropbtn">Events
         </button>
-        <button mat-menu-item>
-          <mat-icon>people_outline</mat-icon>
-          <span [routerLink]="['/proposals','proposals']">Proposals</span>
+
+        <div class="dropdown-content">
+          <mat-menu #performancemenu="matMenu" [overlapTrigger]="false">
+            <div (mouseleave)="performancemenuTrigger.closeMenu()">
+              <a mat-menu-item routerLink="/pastPerformances">
+                <mat-icon>home</mat-icon>
+                <span>Past Performances</span>
+              </a>
+              <a mat-menu-item routerLink="/upcomingPerformances">
+                <mat-icon>people_outline</mat-icon>
+                <span>Upcoming Performances</span>
+              </a>
+              <a mat-menu-item routerLink="/fundRaisers">
+                <mat-icon>videocam</mat-icon>
+                <span>Fundraisers</span>
+              </a>
+            </div>
+          </mat-menu>
+        </div>
+      </div>
+
+      <div class="dropdown" [matMenuTriggerFor]="gallerymenu" #gallerymenuTrigger="matMenuTrigger"
+        (mouseenter)="gallerymenuTrigger.openMenu()" yPosition="below">
+        <button mat-button class="dropbtn">Gallery
+
         </button>
-        <button mat-menu-item>
-          <mat-icon>videocam</mat-icon>
-          <span routerLink="/store">Store</span>
+        <div class="dropdown-content">
+          <mat-menu #gallerymenu="matMenu" [overlapTrigger]="false">
+            <span (mouseleave)="gallerymenuTrigger.closeMenu()">
+              <button mat-menu-item>
+                <mat-icon>home</mat-icon>
+                <span routerLink="/photos">Photos</span>
+              </button>
+              <button mat-menu-item>
+                <mat-icon>people_outline</mat-icon>
+                <span routerLink="/videos">Videos</span>
+              </button>
+            </span>
+          </mat-menu>
+        </div>
+      </div>
+
+      <div class="dropdown" [matMenuTriggerFor]="othermenu" #othermenuTrigger="matMenuTrigger"
+        (mouseenter)="othermenuTrigger.openMenu()" yPosition="below">
+        <button mat-button class="dropbtn">Other
         </button>
-        <button mat-menu-item>
-          <mat-icon>exit_to_app</mat-icon>
-          <span routerLink="/onlinePayment">Online Payment</span>
-        </button>
-      </span>
-    </mat-menu>
-  </span>
-</mat-toolbar>
+        <div class="dropdown-content">
+          <mat-menu #othermenu="matMenu" [overlapTrigger]="false">
+            <span (mouseleave)="othermenuTrigger.closeMenu()">
+              <a mat-menu-item [routerLink]="['/proposals','supportus']">
+                <mat-icon>home</mat-icon>
+                <span>Support US</span>
+              </a>
+              <a mat-menu-item [routerLink]="['/proposals','proposals']">
+                <mat-icon>people_outline</mat-icon>
+                <span>Proposals</span>
+              </a>
+              <a mat-menu-item routerLink="/store">
+                <mat-icon>videocam</mat-icon>
+                <span>Store</span>
+              </a>
+              <a mat-menu-item routerLink="/onlinePayment">
+                <mat-icon>exit_to_app</mat-icon>
+                <span>Online Payment</span>
+              </a>
+            </span>
+          </mat-menu>
+        </div>
+
+      </div>
+
+    </div>
+  </mat-toolbar>
+</div>
