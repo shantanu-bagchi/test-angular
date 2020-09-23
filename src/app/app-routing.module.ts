@@ -43,7 +43,7 @@ const routes: Routes = [
   { path: 'photos', component: PhotosComponent},
   { path: 'videos', component: VideosComponent},
   { path: 'supportUs', component: SupportUsComponent},
-  { path: 'proposals', component: ProposalsComponent},
+  { path: 'proposals/:page', component: ProposalsComponent},
   { path: 'store', component: StoreComponent},
   { path: 'onlinePayment', component: OnlinePaymentComponent},
   { path: 'contactUs', component: ContactUsComponent}

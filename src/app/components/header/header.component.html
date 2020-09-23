@@ -34,7 +34,7 @@
         </button>
         <button mat-menu-item>
           <mat-icon>exit_to_app</mat-icon>
-          <span routerLink="/membership">Membership</span>
+          <span [routerLink]="['/proposals','membership']">Membership</span>
         </button>
       </span>
     </mat-menu>
@@ -46,15 +46,15 @@
       <span (mouseleave)="educationmenuTrigger.closeMenu()">
         <button mat-menu-item>
           <mat-icon>home</mat-icon>
-          <span routerLink="/education">Curriculum</span>
+          <span [routerLink]="['/proposals','curriculum']">Curriculum</span>
         </button>
         <button mat-menu-item>
           <mat-icon>people_outline</mat-icon>
-          <span routerLink="/inPersonClasses">In-person Classes</span>
+          <span [routerLink]="['/proposals','inpersonclasses']">In-person Classes</span>
         </button>
         <button mat-menu-item>
           <mat-icon>videocam</mat-icon>
-          <span routerLink="/onlineClasses">Online Classes</span>
+          <span [routerLink]="['/proposals','onlineclasses']">Online Classes</span>
         </button>
         <button mat-menu-item>
           <mat-icon>exit_to_app</mat-icon>
@@ -104,11 +104,11 @@
       <span (mouseleave)="othermenuTrigger.closeMenu()">
         <button mat-menu-item>
           <mat-icon>home</mat-icon>
-          <span routerLink="/supportUs">Support US</span>
+          <span [routerLink]="['/proposals','supportus']">Support US</span>
         </button>
         <button mat-menu-item>
           <mat-icon>people_outline</mat-icon>
-          <span routerLink="/proposals">Proposals</span>
+          <span [routerLink]="['/proposals','proposals']">Proposals</span>
         </button>
         <button mat-menu-item>
           <mat-icon>videocam</mat-icon>

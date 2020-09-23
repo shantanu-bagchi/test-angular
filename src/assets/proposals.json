@@ -1,0 +1,109 @@
+{
+    "proposals": {
+        "matContent": "Kahlar is looking to partner and work with talented musicians and other artists. If you are an artist involved with Indian Music or Dance and have a proposal for a concert, workshop, lecture/ demonstration or other events, we would love to hear from you.",
+        "matFooter": "We look forward to hearing from you!",
+        "matHeader": "Kahlar welcomes your proposals",
+        "matListHeader": "Please submit your proposal to music_group@kahlar.com and include in your email the following information:",
+        "listItems": [
+            {
+                "content": "A detailed biodata describing yourself or your group"
+            },
+            {
+                "content": "Proposed dates of your project"
+            },
+            {
+                "content": "Level of funding that you are looking for with details about other sources of funding that you may already have obtained in case of co-sponsorship"
+            },
+            {
+                "content": "Links to audio or video performances of you or your organization as relevant"
+            }
+        ]
+    },
+    "supportus": {
+        "matContent": "Kahlar is tax exempt under section 501(c)(3) of the IRS as a non-profit organization. Your fully tax-deductible donation to Kahlar is vital in ensuring the organization fulfills its mission and continues to grow. Your donation will directly help arrange for future quality concerts and workshops as well as providing help to those in need.If you would like to send a check, please make your check payable to Kahlar Inc., and mail to:  Technuf, 40 W Gude Drive, Suite 220 Rockville, Maryland 20850, USA You can also send your payment via Paypal to us.",
+        "matFooter": "Alternatively you can donate online by clicking the link below:Online payment",
+        "matHeader": "Please Support Us",
+        "matListHeader": "Kahlar has also been involved in multiple fundraising efforts to help those in need and has contributed funds to:",
+        "listItems": [
+            {
+                "content": "Amphan victims in Kolkata - India"
+            },
+            {
+                "content": "COVID-19 affected people in Dhaka - Bangladesh"
+            },
+            {
+                "content": "Foodbanks in DC, MD, and VA - USA"
+            },
+            {
+                "content": "Links to audio or video performances of you or your organization as relevant"
+            }
+        ]
+    },
+    "curriculum": {
+        "matContent": "",
+        "matFooter": "If you are interested to know more, please feel free to Contact Us by clicking the link below.",
+        "matHeader": "Kahlar offers a versatile curriculum, though the main focus is on Rabindrasangeet. The course curriculum is designed by Dr. Soumyendu Guha, Dr. Debashish Raychaudhuri and Rohini Raychaudhuri based on the music knowledge and competency levels of the students. The curriculum is subject to change based on evolving needs.",
+        "matListHeader": "The curriculum has embraced:",
+        "listItems": [
+            {
+                "content": "Songs from Tagore’s Geetinatyas (Operas) and Nrityanatyas (Dance Dramas). Songs from Shapmochon have been taught and currently, songs from Shyama are being mastered"
+            },
+            {
+                "content": "Tagore’s compositions (Bhanga Gaan) based on some original songs (Mul Gaan) which were penned by great composers like Tulsidas, Ranganath (Yadubhatta), Swami Haridas and Niyamat Khan (Sadarang)"
+            },
+            {
+                "content": "Tagore’s songs with similar lyrics but with different tunes and rhythms (Surantari and Chhandantari)"
+            },
+            {
+                "content": "Songs of Dwijendralal Roy, Atul Prasad Sen and Rajanikanta Sen"
+            },
+            {
+                "content": "Introduction to Hindusthani Classical Raagas"
+            }
+        ]
+    },
+    "membership": {
+        "matContent": "Kahlar is tax exempt under section 501(c)(3) of the IRS as a non-profit organization. Your fully tax-deductible donation to Kahlar is vital in ensuring the organization fulfills its mission and continues to grow. Your donation will directly help arrange for future quality concerts and workshops as well as providing help to those in need.If you would like to send a check, please make your check payable to Kahlar Inc., and mail to:  Technuf, 40 W Gude Drive, Suite 220 Rockville, Maryland 20850, USA You can also send your payment via Paypal to us.",
+        "matFooter": "If you are interested to know more, please feel free to Contact Us by clicking the link below.",
+        "matHeader": "To be part of our Kahlar family and to be able to participate in any of Kahlar’s activities, we encourage you to become a member of Kahlar. Kahlar Annual Membership is currently $50.",
+        "matListHeader": "Membership payment may be done via any of the following options:",
+        "listItems": [
+            {
+                "content": "Online Payment"
+            },
+            {
+                "content": "Cash/ Check mailed to our Mailing address"
+            }
+        ]
+    },
+    "inpersonclasses": {
+        "matContent": "",
+        "matFooter": "In response to COVID-19, these classes are now being offered Online (linked to Online Classes) and will continue to be offered until further notice. Please check our website for the most current information. If you are interested to know more, please feel free to Contact Us by clicking the link below.",
+        "matHeader": "In Person classes are offered at our Silver Spring location (linked to Contact Us) by Dr. Soumyendu Guha, twice a month.",
+        "matListHeader": "Membership payment may be done via any of the following options:",
+        "listItems": [
+            {
+                "content": "Intermediate students meet every First and Third Sunday of the month at 4 pm"
+            },
+            {
+                "content": "Advanced students meet every Second and Fourth Sunday of the month at 4 pm"
+            }
+        ]
+    },
+    "onlineclasses": {
+        "matContent": "Classes with Dr. Soumyendu Guha (link to Faculty Tab) are currently being held Online as part of Kahlar’s response to COVID-19",
+        "matContent1": "Classes with Dr. Debashish Raychaudhuri (link to Faculty Tab) are conducted Online, once a month. Students are currently learning songs from the Dance Drama - Shyama.",
+        "matContent2": "Classes with Rohini Raychaudhuri (link to Faculty Tab) are conducted twice a month. Students are currently learning songs of Rabindranath Tagore as well as songs of Dwijendralal Roy, Atul Prasad Sen and Rajanikanta Sen.",
+        "matFooter": "In response to COVID-19, some programs are being planned to be staged virtually. Please check our website for the most current information.If you are interested to know more, please feel free to Contact Us by clicking the link below.",
+        "matHeader": "Online classes are held every month, either once or twice, based on the Curriculum. Classes are conducted via Zoom or Google Hangouts.",
+        "matListHeader": "These classes are being held twice a month. Students are currently practicing songs of Sarot Ritu (Fall Season). please find the schedule below.",
+        "listItems": [
+            {
+                "content": "Intermediate students meet every First and Third Sunday of the month at 4 pm"
+            },
+            {
+                "content": "Advanced students meet every Second and Fourth Sunday of the month at 4 pm"
+            }
+        ]
+    }
+}
