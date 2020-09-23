@@ -1,15 +1,17 @@
-main {
-    padding: 10px;
-}
-mat-toolbar {
-    height:90x;
-}
 .mat-toolbar{
   background: #000000;
   color: #fff;
 }
-  .footer-element {
-    /* This fills the remaining space, by using flexbox. 
-       Every toolbar row uses a flexbox row layout. */
-    flex: 2 2 auto;
-  }
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  margin: 0px;
+}
